@@ -1,0 +1,56 @@
+:root {
+  --color: #f6f6f6;
+}
+
+.container-character {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-character .character-img {
+  width: 30%;
+  margin: 0 50px;
+  height: auto;
+}
+
+.character-img img {
+  width: 100%;
+}
+
+.container-character .character-info {
+  width: 50%;
+}
+
+.character-info-name {
+  font-size: 24px;
+  color: var(--color);
+}
+
+.about-character span {
+  font-size: 16px;
+  display: block;
+  margin: 0 10px 10px 0;
+  color: var(--color);
+}
+
+.content-btns {
+  margin: 150px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--color);
+  display: inline-block;
+  margin: 0 20px 0;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}

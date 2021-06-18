@@ -1,0 +1,80 @@
+.container-cards {
+  display: grid;
+  margin: 50px auto;
+  grid-template: repeat(auto-fill, 390px) / repeat(auto-fill, 300px);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s linear;
+}
+
+.card-item {
+  border-radius: 20px;
+  box-shadow: 0 2px 20px #ececec20;
+  min-width: 300px;
+  min-height: 390px;
+  max-width: 300px;
+  max-height: 390px;
+  transition: all 0.3s linear;
+}
+
+.card-item-image {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.card-item-link {
+  text-decoration: none;
+}
+
+.card-item-name {
+  padding: 5px 20px;
+  color: var(--color);
+  font-size: 24px;
+}
+
+.content-card-image {
+  position: relative;
+  width: 100%;
+}
+
+.content-character-info {
+  visibility: hidden;
+  border-radius: 20px 20px 0 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #21212160;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.card-item-status,
+.card-item-gender,
+.card-item-location,
+.card-item-specie {
+  font-size: 14px;
+  display: block;
+  margin: 0 10px 10px 0;
+  color: #f8f8f8;
+  font-weight: 600;
+}
+
+.container-cards:hover .card-item {
+  opacity: 0.8;
+}
+
+.container-cards .card-item:hover {
+  opacity: 1;
+}
+
+.card-item:hover .content-character-info {
+  visibility: visible;
+  opacity: 1;
+}
